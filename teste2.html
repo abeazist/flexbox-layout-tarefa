@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .topo {
+            background-color: violet;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .conteudo {
+            background-color: blueviolet;
+            flex-direction: row;
+            flex: 3;
+        }
+
+        .slidebar {
+            background-color: rgb(154, 116, 197);
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .rodape {
+            background-color: purple;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">topo</div>
+        <div class="conteudo">conteudo</div>
+        <div class="slidebar">slidebar</div>
+        <div class="rodape">rodapé</div>
+    </div>
+</body>
+</html>

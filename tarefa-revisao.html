@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlexBox</title>
     <style>
-
-        .container{
-            height: 100vh;
-            display:flex;
-            flex-flow: column wrap;
-            
-            
-        }
-        
-        .box1{
-            background-color: violet;
-            flex-flow: row nowrap;
-            
-            
-            
-
-        }
-        .box2{
-            display:block;
-            background-color: rgb(154, 116, 197);
-            
-        }
-        .box3{
-            display: block;
-            background-color: blueviolet;
-            
-        }
-
-        .box4{
-            display: block;
-            background-color: purple;
-           
-        }
-
-
-
+      body {
+        margin: 0;
+        height: calc(
+          100vh - 32px
+        ); /*PADDING DO CONTAINER VEZES 2 (PARTE DE CIMA E DE BAIXO)*/
+      }
+      .container {
+        padding: 16px;
+        height: 100%;
+      }
+      .corpo-site {
+        display: flex;
+        height: 70%;
+      }
+      header {
+        background-color: violet;
+        height: 15%;
+      }
+      .corpo-site aside {
+        background-color: rgb(154, 116, 197);
+        width: 20%;
+      }
+      .corpo-site main {
+        background-color: blueviolet;
+        width: 80%;
+      }
+      footer {
+        display: block;
+        background-color: purple;
+        height: 15%;
+      }
     </style>
-
-
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="box1">topo</div>
-        <div class="box2">slidebar</div>
-        <div class="box3">conteudo</div>
-        <div class="box4">rodapé</div>
+      <header>topo</header>
+      <div class="corpo-site">
+        <aside>slidebar</aside>
+        <main>conteudo</main>
+      </div>
+      <footer>rodapé</footer>
     </div>
-
-
-
-</body>
+  </body>
 </html>

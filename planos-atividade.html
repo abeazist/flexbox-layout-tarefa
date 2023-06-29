@@ -1,126 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br   ">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício</title>
 
     <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: blue;
-        }
-
-        .planos{
-            color: rgb(255, 255, 255);
-            flex-direction: row;
-            justify-content: center;
-            
-            
-        }
-        .container{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            
-            
-        }
-        
-        .card{
-            flex-direction: column;
-            border: solid white 1px;
-            border-radius: 10px;
-            text-align: center;
-            background-color: white;
-            width: fit-content;           
-            
-
-        }
-        .plano-nome{
-            color: rgb(0, 0, 0);
-            font-family:Verdana, Geneva, Tahoma, sans-serif
-        }
-        .plano-valor{
-            color: blue;
-        }
-
-        .plano-descricao{
-            color: rgb(155, 149, 149);
-        }
-
-        .plano-comprar{
-            background-color: blue;
-            color: aliceblue;
-            justify-content:center;
-            width: fit-content;
-            border: solid white 1px;
-            border-radius: 10px;
-        }
-
-
-
-
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        background-color: #3b5bdb;
+        padding: 40px 0;
+      }
+      li {
+        text-indent: 0;
+        list-style-type: 0;
+        list-style: none;
+      }
+      .body-main {
+        display: flex;
+        justify-content: space-between;
+      }
+      .card {
+        background-color: white;
+      }
     </style>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-            <h1 class="planos">Planos</h1>
-    
-        <div class="card">            
-            <div class="plano-nome">Starter</div>
-            <div class="plano-valor">R$ 50,00</div>
-            <div class="plano-descricao">
-                <ul>
-                    <li>1 usuário</li>
-                    <li>100 GB de armazenamento</li>
-                    <li>Suporte por email</li>
-                </ul>
-            </div>
-            
-            <div class="plano-comprar">
-                <span>Comprar</span>
-            </div>
+      <h1>Planos</h1>
+      <div class="body-main">
+        <div class="card">
+          <div class="plano-nome">Starter</div>
+          <div class="plano-valor">R$ 50,00</div>
+          <div class="plano-descricao">
+            <ul>
+              <li>1 usuário</li>
+              <li>100 GB de armazenamento</li>
+              <li>Suporte por email</li>
+            </ul>
+          </div>
+          <div class="plano-comprar">
+            <span>Comprar</span>
+          </div>
         </div>
         <div class="card">
-            
-            <div class="plano-nome">Personal</div>
-            <div class="plano-valor">R$ 100,00</div>
-            <div class="plano-descricao">
-                <ul>
-                    <li>10 usuários</li>
-                    <li>1 TB de armazenamento</li>
-                    <li>Suporte por email</li>
-                </ul>
-            </div>
-            <div class="plano-comprar">
-                <span>Comprar</span>
-            </div>
-           
+          <div class="plano-nome">Personal</div>
+          <div class="plano-valor">R$ 100,00</div>
+          <div class="plano-descricao">
+            <ul>
+              <li>10 usuários</li>
+              <li>1 TB de armazenamento</li>
+              <li>Suporte por email</li>
+            </ul>
+          </div>
+          <div class="plano-comprar">
+            <span>Comprar</span>
+          </div>
         </div>
         <div class="card">
-            <div class="plano-nome">Team</div>
-            <div class="plano-valor">R$ 300,00</div>
-            <div class="plano-descricao">
-                <ul>
-                    <li>50 usuários</li>
-                    <li>5 TB de armazenamento</li>
-                    <li>Suporte por email</li>
-                </ul>
-            </div>
-            <div class="plano-comprar">
-                <span>Comprar</span>
-            </div>
-            
+          <div class="plano-nome">Team</div>
+          <div class="plano-valor">R$ 300,00</div>
+          <div class="plano-descricao">
+            <ul>
+              <li>50 usuários</li>
+              <li>5 TB de armazenamento</li>
+              <li>Suporte por email</li>
+            </ul>
+          </div>
+          <div class="plano-comprar">
+            <span>Comprar</span>
+          </div>
         </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

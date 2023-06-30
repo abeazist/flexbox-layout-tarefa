@@ -7,6 +7,12 @@
     <title>CSS display</title>
 
     <style>
+        body {
+        margin: 0;
+        height: calc(
+          100vh - 32px
+        ); /*PADDING DO CONTAINER VEZES 2 (PARTE DE CIMA E DE BAIXO)*/
+      }
        
        .container{
         display: flex;
@@ -16,6 +22,7 @@
         height: 100vh;
         align-items: center;
         flex-wrap: wrap;
+        
         
         
         
@@ -39,6 +46,8 @@
 
         }
 
+        
+
        
 
     </style>
@@ -46,12 +55,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="display1"><h1>Display</h1></div>
+        <div class="display1"><h1>Display</h1>
+            
+        
+        </div>
         <div class="basedisplay1">Div</div>
         <div class="basedisplay1">Div</div>
-        <div class="basedisplay1">Div</div>
-        <div class="basedisplay1">Div</div>
-        <div class="basedisplay1">Div</div>
+        
         
     </div>
 
